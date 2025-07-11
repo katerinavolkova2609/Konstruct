@@ -1,18 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-  
+
 html {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 body {
-    margin: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 .container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 250px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 250px;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+.story_inner {
+  display: flex;
+}
+
+.story_left {
+  max-width: 398px;
+    margin-right: 77px;
+}
+
+.story_right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.story_header {
+  text-align: center;
+  font-weight: bold;
+  color: #48555b;
+  font-size: 18px;
+  padding: 50px 0;
+}
+
+.story_header:after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: #00a4e5;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.story_title {
+  color: #48555b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.accent_color {
+  color: #16ace8;
+}
+
+.story_text {
+  color: #48555b;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.story-item {
+    font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  width: 140px;
+  height: 224px;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.story-item:nth-child(1) {
+  background-image: url(../img/Plan.png);
+}
+
+.story-item:nth-child(2) {
+  background-image: url(../img/Manage.png);
+}
+
+.story-item:nth-child(3) {
+  background-image: url(../img/Build.png);
+  margin-right: 0;
+}
+
+/* .story {
+}
+.uppercase {
+}
+
+
+
+
+ */
